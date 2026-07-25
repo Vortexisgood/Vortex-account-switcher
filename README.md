@@ -1,6 +1,6 @@
 # Vortex Account Switcher
 
-A Chrome extension that lets you switch between multiple [playvortex.io](https://playvortex.io) accounts instantly — no more logging out and back in.
+A Chrome extension that lets you switch between multiple [playvortex.io](https://playvortex.io) accounts instantly no more logging out and back in.
 
 ![License](https://img.shields.io/badge/license-MIT-purple)
 ![Manifest](https://img.shields.io/badge/manifest-v3-blue)
@@ -25,7 +25,7 @@ chrome://extensions
 
 In the top-right corner of the Extensions page, toggle **Developer mode** ON.
 
-### Step 4 — Load the extension
+### Step 4 Load the extension
 
 Click the **Load unpacked** button that appears on the top-left.
 
