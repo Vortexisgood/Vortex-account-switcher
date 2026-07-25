@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vortex Account Switcher</title>
+  <link rel="stylesheet" href="content.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      width: 320px;
+      background: #130E26;
+      color: #E2D9FF;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="vx-header" style="margin-bottom:14px; padding-bottom:8px;">
+    <div class="vx-title" style="font-size:16px;">
+      <i class="fa-solid fa-arrows-rotate"></i>
+      <span>Switch Account</span>
+    </div>
+  </div>
+
+  <div class="vx-section-label">Current Account</div>
+  <div class="vx-current-card" id="popup-current-card" style="margin-bottom:14px; padding:10px 12px;">
+    <div class="vx-user-info">
+      <img class="vx-avatar" id="popup-curr-avatar" src="" alt="" style="width:36px; height:36px;">
+      <span class="vx-username" id="popup-curr-username" style="font-size:13px;">Not signed in</span>
+    </div>
+    <span class="vx-badge-active">Active</span>
+  </div>
+
+  <div class="vx-section-label">Saved Accounts</div>
+  <div class="vx-accounts-list" id="popup-accounts-list" style="max-height:160px; margin-bottom:14px;"></div>
+
+  <button class="vx-btn vx-btn-primary vx-btn-full" id="popup-add-account-btn">
+    <span>+ Add Account</span>
+  </button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

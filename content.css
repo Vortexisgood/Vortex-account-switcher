@@ -1,0 +1,242 @@
+.vortex-switch-btn {
+  background: transparent;
+  border: none;
+  color: #7A6A9A;
+  font-size: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 4px;
+}
+
+.vortex-switch-btn:hover {
+  background: rgba(124, 58, 237, 0.2);
+  color: #E2D9FF;
+  transform: translateY(-1px);
+}
+
+.vx-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(7, 5, 15, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.vx-overlay.vx-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vx-modal {
+  background: #130E26;
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 18px;
+  width: 440px;
+  max-width: 92vw;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(124, 58, 237, 0.2);
+  padding: 24px;
+  color: #E2D9FF;
+  font-family: inherit;
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+  box-sizing: border-box;
+}
+
+.vx-overlay.vx-show .vx-modal {
+  transform: scale(1);
+}
+
+.vx-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vx-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #E2D9FF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vx-title i {
+  color: #7C3AED;
+}
+
+.vx-close {
+  background: transparent;
+  border: none;
+  color: #6A5A8A;
+  font-size: 16px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vx-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #E2D9FF;
+}
+
+.vx-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #7A6A9A;
+  margin-bottom: 10px;
+}
+
+.vx-current-card {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.vx-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vx-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #7C3AED;
+  background: #1A1030;
+}
+
+.vx-username {
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.vx-badge-active {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ADE80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.vx-accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 4px;
+}
+
+.vx-account-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.vx-account-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.vx-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vx-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.vx-btn-primary {
+  background: linear-gradient(135deg, #7C3AED, #4F46E5);
+  color: #FFFFFF;
+}
+
+.vx-btn-primary:hover {
+  background: linear-gradient(135deg, #8B5CF6, #6366F1);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+}
+
+.vx-btn-outline {
+  background: transparent;
+  color: #A89BC2;
+  border: 1px solid rgba(124, 58, 237, 0.4);
+}
+
+.vx-btn-outline:hover {
+  color: #E2D9FF;
+  border-color: #7C3AED;
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.vx-btn-danger {
+  background: transparent;
+  color: #6A5A8A;
+  border: none;
+  padding: 6px 10px;
+}
+
+.vx-btn-danger:hover {
+  color: #EF4444;
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.vx-btn-full {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+}
