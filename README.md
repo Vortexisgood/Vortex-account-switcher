@@ -52,7 +52,7 @@ The extension is now installed. Go to [playvortex.io/home](https://playvortex.io
 - 🔄 Switch between saved accounts with one click
 - 💾 Saves cookies, localStorage & sessionStorage per account
 - ➕ Add new accounts without losing existing sessions
-- 🎨 UI that matches the playvortex.io design
+- 🎨 UI that matches the playvortex.io design (not so)
 
 ---
 
